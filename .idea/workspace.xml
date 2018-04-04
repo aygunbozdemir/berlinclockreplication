@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="37c455e0-2540-4891-aa4a-5eac958f5aa4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/berlinclock/controller/HourController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/berlinclock/controller/HourController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/berlinclock/model/HourRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/berlinclock/model/HourRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/berlinclock/model/VisualBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/berlinclock/service/HourService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/berlinclock/controller/HourController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/berlinclock/controller/HourController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/berlinclock/model/HourRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/berlinclock/model/HourRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/berlinclock/model/VisualBuilder.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,14 +33,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HourService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HourService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/berlinclock/service/HourService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="46" column="89" lean-forward="true" selection-start-line="46" selection-start-column="89" selection-end-line="46" selection-end-column="89" />
+            <state relative-caret-position="476">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="238">
+                <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -95,6 +101,8 @@
         <option value="$PROJECT_DIR$/src/main/java/berlinclock/model/HourRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/berlinclock/controller/HourController.java" />
         <option value="$PROJECT_DIR$/src/main/java/berlinclock/service/HourService.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -105,10 +113,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-13" />
-    <option name="y" value="-1112" />
-    <option name="width" value="1551" />
-    <option name="height" value="879" />
+    <option name="x" value="-8" />
+    <option name="y" value="-1088" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -188,6 +196,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../weather-api" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -263,12 +272,12 @@
       <updated>1522738856368</updated>
       <workItem from="1522738860364" duration="16417000" />
       <workItem from="1522765781897" duration="1605000" />
-      <workItem from="1522821938118" duration="4294000" />
+      <workItem from="1522821938118" duration="6542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22316000" />
+    <option name="totallyTimeSpent" value="24564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-1088" width="1936" height="1056" extended-state="6" />
@@ -293,9 +302,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32900432" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2608225" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2608225" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2563966" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
@@ -494,13 +503,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/berlinclock/service/HourService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="46" column="89" lean-forward="true" selection-start-line="46" selection-start-column="89" selection-end-line="46" selection-end-column="89" />
+        <state relative-caret-position="476">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="238">
+            <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
