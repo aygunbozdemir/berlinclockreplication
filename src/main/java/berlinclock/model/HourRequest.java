@@ -2,7 +2,7 @@ package berlinclock.model;
 
 public class HourRequest {
 
-    String time;
+    private String time;
 
     public String getTime() {
         return time;
@@ -11,4 +11,5 @@ public class HourRequest {
     public void setTime(String time) {
         this.time = time;
     }
+
 }

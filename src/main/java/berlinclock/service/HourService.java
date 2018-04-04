@@ -1,16 +1,28 @@
-package berlinclock.model;
+package berlinclock.service;
 
+import berlinclock.model.HourRequest;
 import org.springframework.stereotype.Service;
 
-import javax.inject.Inject;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 @Service
-public class VisualBuilder {
+public class HourService {
 
     private static int maxColsInRow = 11;
 
-    public String[] berlinClock(HourRequest hourRequest) {
-        String[] times = hourRequest.getTime().split(":", 3);
+    public  String[] timeToBerlinClock(HourRequest hourRequest) {
+
+        return berlinClock(hourRequest.getTime());
+    }
+    public  String[] recentToBerlinClock() {
+
+        return berlinClock(dateToString());
+    }
+
+    public String[] berlinClock(String time) {
+        String[] times = time.split(":", 3);
 
         if (times.length != 3) {
             throw new IllegalArgumentException("INVALID_TIME_ERROR");
@@ -32,8 +44,8 @@ public class VisualBuilder {
                 rowStringViaInteger(s, 1),
                 rowStringViaInteger(fh, 4),
                 rowStringViaInteger(h, 4),
-                rowStringViaInteger(qm, 11),
-                rowStringViaInteger(m, 4),
+                rowStringViaInteger(qm, 11).replaceAll("R", "Y").replaceAll("YYY","YYR"),
+                rowStringViaInteger(m, 4).replaceAll("R", "Y"),
         };
 
         return berlin;
@@ -44,16 +56,29 @@ public class VisualBuilder {
 
 
         int whiteSpace = maxColsInRow - maxCols;
-        for (int i = 0; i < whiteSpace / 2; i++) row += "   ";
+        for (int i = 0; i < whiteSpace / 2; i++) row += " ";
 
         for (int i = 0; i < cols; i++) {
-            row += "[*]";
+            row += "R";
         }
         for (int i = 0; i < maxCols - cols; i++) {
-            row += "[ ]";
+            row += "B";
         }
         return row;
     }
+
+    public String dateToString() {
+
+        DateFormat dt = new SimpleDateFormat("hh:mm:ss");
+
+        Date now = new Date();
+
+        return dt.format(now);
+
+
+    }
+
+
 }
 
 

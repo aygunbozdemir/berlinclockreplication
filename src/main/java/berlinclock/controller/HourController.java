@@ -1,7 +1,7 @@
 package berlinclock.controller;
 
 import berlinclock.model.HourRequest;
-import berlinclock.model.VisualBuilder;
+import berlinclock.service.HourService;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -13,20 +13,19 @@ import javax.inject.Inject;
 @RequestMapping
 public class HourController {
 
-    //@Inject
-    //HourService hourService;
-
     @Inject
-    VisualBuilder visualBuilder;
+    HourService hourService;
 
-
-
-    @RequestMapping(value = "/", method = RequestMethod.POST)
+    @RequestMapping(value = "/any", method = RequestMethod.POST)
     public String[] convertTime(@RequestBody HourRequest hourRequest) {
 
-        return visualBuilder.berlinClock(hourRequest);
+        return hourService.timeToBerlinClock(hourRequest);
 
+    }
+    @RequestMapping(value = "/recent", method = RequestMethod.GET)
+    public String[] recentTime() {
 
+       return hourService.recentToBerlinClock();
     }
 
 }
